@@ -1,0 +1,17 @@
+.skill {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.skill img {
+  width: 50px;
+}
+
+@media (min-width: 800px) {
+  .skill img {
+    width: 75px;
+  }
+}
