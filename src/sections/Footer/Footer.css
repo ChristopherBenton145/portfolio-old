@@ -1,0 +1,30 @@
+.footer {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  background-color: #340c7f;
+  background: -webkit-linear-gradient(to bottom right, #c04de2, #340c7f);
+  background: linear-gradient(to bottom right, #c04de2, #340c7f);
+}
+
+.footer::before {
+  content: '';
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../../assets/images/footer-pattern-bg.png') center center;
+  background-size: cover;
+}
+
+.footer::after {
+  content: '';
+  width: 100vw;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../../assets/images/footer-white-mask.png') center;
+  background-size: cover;
+}
