@@ -11,6 +11,7 @@ body {
   font-family: var(--default-fonts);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,10 +34,16 @@ a {
   text-decoration: none;
 }
 
+.app {
+  overflow-x: hidden !important;
+}
+
 /* Variables */
 
 :root {
   --light-gray: #d3d3d3;
+  --gray: gray;
+  --red: #ef4b6c;
   
   --default-fonts: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }

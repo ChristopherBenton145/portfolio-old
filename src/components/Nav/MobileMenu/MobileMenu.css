@@ -1,0 +1,29 @@
+.mobile-menu {
+  transition: transform 0.2s;
+  stroke: #fff;
+  z-index: 5;
+}
+
+
+.mobile-menu:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.mobile-menu.active {
+  stroke: var(--light-gray);
+}
+
+.mobile-menu.active svg:nth-child(1) {
+  display: none;
+}
+
+.mobile-menu:not(.active) svg:nth-child(2) {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .mobile-menu {
+    display: none;
+  }
+}

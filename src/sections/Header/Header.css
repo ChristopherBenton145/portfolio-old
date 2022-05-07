@@ -41,7 +41,7 @@
   position: relative;
   z-index: 1;
   margin: auto;
-  padding-top: 150px;
+  padding-top: 75px;
 }
 
 .header h1 {
@@ -116,6 +116,6 @@
   }
 
   .header .container {
-    padding-top: 175px;
+    padding-top: 125px;
   }
 }
