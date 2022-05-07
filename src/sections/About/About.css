@@ -1,3 +1,21 @@
 .about {
-    
+  width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+.about p {
+  line-height: 28px;
+  font-size: 20px;
+}
+
+@media (min-width: 800px) {
+  .about {
+    width: 500px;
+  }
+
+  .about p {
+    line-height: 32px;
+    font-size: 25px;
+  }
 }

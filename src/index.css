@@ -6,12 +6,15 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 body {
   margin: 0;
   font-family: var(--default-fonts);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden !important;
 }
 
 h1, h2, h3, h4, h5, h6 {

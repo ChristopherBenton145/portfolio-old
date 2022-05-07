@@ -16,4 +16,10 @@
   background-color: var(--red);
   margin: auto;
 }
+
+@media (min-width: 800px) {
+  .title {
+    font-size: 45px;
+  }
+}
   
