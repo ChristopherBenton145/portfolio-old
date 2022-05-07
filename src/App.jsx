@@ -2,6 +2,7 @@ import Loader from './components/Loader/Loader';
 import Header from './sections/Header/Header';
 import About from './sections/About/About';
 import Skills from './sections/Skills/Skills';
+import Projects from './sections/Projects/Projects';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }

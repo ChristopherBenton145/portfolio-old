@@ -1,0 +1,14 @@
+.projects .container {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 1400px) {
+  .projects .container {
+    width: 60vw;
+  }
+}
