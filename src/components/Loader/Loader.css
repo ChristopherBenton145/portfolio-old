@@ -1,0 +1,25 @@
+.loader {
+  --color: #000;
+  --animation-duration: 2.5s;
+  --animation-delay: 2s;
+
+  width: 0;
+  height: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: load var(--animation-duration) var(--animation-delay) forwards;
+  border: 5000px solid var(--color);
+  border-radius: 50%;
+  box-sizing: content-box;
+  z-index: 9;
+  pointer-events: none;
+}
+
+@keyframes load {
+  to {
+    width: 5000px;
+    height: 5000px;
+  }
+}
