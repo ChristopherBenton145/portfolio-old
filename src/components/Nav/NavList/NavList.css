@@ -2,20 +2,34 @@
 
 .nav-large {
   display: none;
-  gap: 30px;
 }
 
-.nav-large li:nth-child(1) a {
+.nav-large li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  transform: skew(-20deg);
+  color: var(--color1);
+  padding: 0 20px;
+  font-size: 18px;
+  padding: 0 25px;
+}
+
+.nav-large li.active {
+  background: var(--color1);
+  background: var(--gradient2);
+  background: var(--gradient1);
   color: #fff;
 }
 
-.nav-large a {
-  color: var(--light-gray);
-  transition: color 0.2s;
+.nav-large li.active:hover {
+  cursor: pointer;
 }
 
-.nav-large a:hover {
-  color: #fff;
+.nav-large li:not(.active):hover {
+  background: var(--light-gray);
+  color: #000;
+  cursor: pointer;
 }
 
 /* Nav Small */
@@ -45,12 +59,9 @@
   pointer-events: none;
 }
   
-.nav-small a {
-  color: var(--light-gray);
-}
-  
-.nav-small a:hover {
-  color: var(--red);
+.nav-small li:hover {
+  color: var(--color2);
+  cursor: pointer;
 }
 
 /* Media Queries */

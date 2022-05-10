@@ -1,10 +1,36 @@
 .nav {
+  --color1: #f857a8;
+  --color2: #ff5858;
+  --gradient1: linear-gradient(45deg, #f857a8, #ff5858);
+  --gradient2: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
+
   width: 100vw;
-  max-width: 950px;
-  height: 50px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  margin: auto;
-  padding: 0px 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 5;
+}
+
+.nav h1 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  transform: translateX(-10px) skew(-20deg);
+  background: var(--color1);
+  background: var(--gradient2);
+  background: var(--gradient1);
+  font-size: 15px;
+  padding: 15px;
+}
+
+@media (min-width: 1200px) {
+  .nav h1 {
+    font-size: 25px;
+  }
 }

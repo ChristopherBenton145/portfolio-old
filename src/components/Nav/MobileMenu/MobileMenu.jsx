@@ -2,14 +2,13 @@ import React from 'react';
 import './MobileMenu.css';
 
 export function activateMobileMenu() {
-  if (window.innerWidth < 800) {
-    document.querySelector('.mobile-menu').classList.toggle('active');
-    document.querySelector('.nav-small').classList.toggle('active');
-    if (document.body.style.overflow == 'hidden') {
-      document.body.style.overflow = 'visible';
-    } else {
-      document.body.style.overflow = 'hidden';
-    }
+  document.querySelector('.mobile-menu').classList.toggle('active');
+  document.querySelector('.nav-small').classList.toggle('active');
+  
+  if (document.body.style.overflow == 'hidden') {
+    document.body.style.overflow = 'visible';
+  } else {
+    document.body.style.overflow = 'hidden';
   }
 }
 

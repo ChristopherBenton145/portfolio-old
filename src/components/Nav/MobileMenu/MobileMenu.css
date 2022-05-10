@@ -1,17 +1,13 @@
 .mobile-menu {
   transition: transform 0.2s;
-  stroke: #fff;
+  stroke: var(--color2);
+  margin-right: 20px;
   z-index: 5;
 }
-
 
 .mobile-menu:hover {
   transform: scale(1.1);
   cursor: pointer;
-}
-
-.mobile-menu.active {
-  stroke: var(--light-gray);
 }
 
 .mobile-menu.active svg:nth-child(1) {
