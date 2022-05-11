@@ -1,3 +1,4 @@
+import React, { memo } from 'react';
 import Loader from './components/Loader/Loader';
 import Header from './sections/Header/Header';
 import About from './sections/About/About';
@@ -9,7 +10,7 @@ import Footer from './sections/Footer/Footer';
 function App() {
   return (
     <div className='app'>
-      {/* <Loader color='#000' duration='2.5s' delay='2s' /> */}
+      <Loader color='#000' duration='2.5s' delay='2s' />
       <Header />
       <About />
       <Skills />
@@ -20,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);

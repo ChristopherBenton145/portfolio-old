@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, memo } from 'react';
 import './Nav.css';
 import NavList from './NavList/NavList';
 import MobileMenu, { activateMobileMenu } from './MobileMenu/MobileMenu';
@@ -48,4 +48,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default memo(Nav);

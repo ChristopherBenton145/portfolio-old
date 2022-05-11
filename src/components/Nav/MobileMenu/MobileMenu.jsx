@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './MobileMenu.css';
 
 let active = false;
@@ -27,4 +27,4 @@ function MobileMenu() {
   )
 }
 
-export default MobileMenu;
+export default memo(MobileMenu);

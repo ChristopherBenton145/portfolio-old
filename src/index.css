@@ -7,7 +7,15 @@
 }
 
 html {
-  /* overflow-x: hidden !important; */
+  /* overflow-x: hidden; */
+}
+
+html.static {
+  overflow: hidden;
+}
+
+html.loading {
+  overflow: hidden !important;
 }
 
 body {
@@ -37,18 +45,6 @@ a {
   text-decoration: none;
 }
 
-html {
-  overflow-x: hidden;
-}
-
-html.static {
-  overflow: hidden;
-}
-
-html.loading {
-  overflow: hidden !important;
-}
-
 /* Variables */
 
 :root {
@@ -63,6 +59,7 @@ html.loading {
 
 @media (min-width: 800px) {
   html.static {
-    overflow-y: visible !important;
+    overflow: visible !important;
+    /* overflow-y: visible !important; */
   }
 }

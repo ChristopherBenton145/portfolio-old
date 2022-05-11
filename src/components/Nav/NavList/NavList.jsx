@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './NavList.css';
 import { gotoSection } from '../Nav';
 
@@ -16,4 +16,4 @@ function NavList({ className }) {
   );
 }
 
-export default NavList;
+export default memo(NavList);
