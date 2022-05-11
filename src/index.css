@@ -37,8 +37,16 @@ a {
   text-decoration: none;
 }
 
-.app {
-  /* overflow-x: hidden !important; */
+html {
+  overflow-x: hidden;
+}
+
+html.static {
+  overflow: hidden;
+}
+
+html.loading {
+  overflow: hidden !important;
 }
 
 /* Variables */
@@ -49,4 +57,12 @@ a {
   --red: #ef4b6c;
   
   --default-fonts: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*  Media Queries */
+
+@media (min-width: 800px) {
+  html.static {
+    overflow-y: visible !important;
+  }
 }

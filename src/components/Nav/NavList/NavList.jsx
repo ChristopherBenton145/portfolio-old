@@ -1,15 +1,17 @@
 import React from 'react';
 import './NavList.css';
-import { activateMenu } from '../Nav';
+import { gotoSection } from '../Nav';
 
 function NavList({ className }) {
   return (
     <ul className={className}>
-      <li className='active' onClick={(e) => activateMenu(e.target)}>Home</li>
-      <li onClick={(e) => activateMenu(e.target)}>About</li>
-      <li onClick={(e) => activateMenu(e.target)}>Skills</li>
-      <li onClick={(e) => activateMenu(e.target)}>Projects</li>
-      <li onClick={(e) => activateMenu(e.target)}>Contact</li>
+      <div className='ribbon1' />
+      <li className='active' onClick={() => gotoSection(document.querySelector('.header'))}>Home</li>
+      <li onClick={() => gotoSection(document.querySelector('.about'))}>About</li>
+      <li onClick={() => gotoSection(document.querySelector('.skills'))}>Skills</li>
+      <li onClick={() => gotoSection(document.querySelector('.projects'))}>Projects</li>
+      <li onClick={() => gotoSection(document.querySelector('.contact'))}>Contact</li>
+      <span className='ribbon2' />
     </ul>
   );
 }

@@ -1,30 +1,30 @@
 import React from 'react';
 import './MobileMenu.css';
 
+let active = false;
+
 export function activateMobileMenu() {
-  document.querySelector('.mobile-menu').classList.toggle('active');
-  document.querySelector('.nav-small').classList.toggle('active');
-  
-  if (document.body.style.overflow == 'hidden') {
-    document.body.style.overflow = 'visible';
-  } else {
-    document.body.style.overflow = 'hidden';
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const listSmall = document.querySelector('.list-small');
+  const html = document.querySelector('html');
+
+  if (active == false) {
+    setTimeout(() => mobileMenu.style = 'top: -85%; transition: top 0.1s;', 1);
+    setTimeout(() => mobileMenu.style = 'top: -175%; transition: top 0.4s;', 200);
+    setTimeout(() => mobileMenu.style = 'top: -100%; transition: top 0.6s;', 550);
+    setTimeout(() => active = false, 1000);
+    listSmall.classList.toggle('active');
+    html.classList.toggle('static');
+    active = true;
   }
 }
 
 function MobileMenu() {
   return (
-    <div className='mobile-menu' onClick={activateMobileMenu}>
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='50px'>
-        <title>Menu Open</title>
-        <path strokeLinecap='round' strokeMiterlimit='10' strokeWidth='32' d='M80 160h352M80 256h352M80 352h352'/>
-      </svg>
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='50px'>
-        <title>Menu Close</title>
-        <path strokeLinecap='round' strokeinejoin='round' strokeWidth='32' d='M368 368L144 144M368 144L144 368'/>
-      </svg>
+    <div className='mobile-menu' onClick={activateMobileMenu} >
+      <div className='ribbon' />
     </div>
-  );
+  )
 }
 
 export default MobileMenu;

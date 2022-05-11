@@ -6,7 +6,7 @@ import Project from '../../components/Project/Project';
 function Projects() {
   return (
     <section className='projects' id='projects'>
-      <Title title='projects' />
+      <Title title='Projects' />
       <div className='container'>
         <Project title='Premium Landing Page' live='https://premium-landing-page.netlify.app/' code='https://github.com/ChristopherBenton145/premium-landing-page' />
         <Project title='Restaurant Page' live='https://restaurant-page42.netlify.app' code='https://github.com/ChristopherBenton145/restaurant-page' />
