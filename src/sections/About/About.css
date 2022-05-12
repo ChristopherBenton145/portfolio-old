@@ -3,7 +3,7 @@
   max-width: 1000px;
   text-align: center;
   margin: auto;
-  padding-bottom: 250px;
+  padding-bottom: 150px;
 }
 
 .about .container {
@@ -23,5 +23,9 @@
   .about p {
     line-height: 32px;
     font-size: 25px;
+  }
+
+  .about {
+    padding-bottom: 250px;
   }
 }

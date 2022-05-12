@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './Skill.css';
 
 function Skill({ title, img }) {
@@ -10,4 +10,4 @@ function Skill({ title, img }) {
   );
 }
 
-export default Skill;
+export default memo(Skill);

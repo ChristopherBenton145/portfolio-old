@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './Skills.css';
 import Title from '../../components/Title/Title';
 import Skill from '../../components/Skill/Skill';
@@ -17,24 +17,24 @@ import reduxSkill from '../../assets/images/skills/redux.png';
 
 function Skills() {
   return (
-    <section className='skills' id='skills'>
+    <section className='skills'>
       <Title title='Skills' />
       <div className='container'>
         <Skill title='HTML' img={htmlSkill} />
         <Skill title='CSS' img={cssSkill} />
-        <Skill title='JavaScript' img={javascriptSkill} />
-        <Skill title='React' img={reactSkill} />
-        <Skill title='Git' img={gitSkill} />
         <Skill title='Sass' img={sassSkill} />
+        <Skill title='JavaScript' img={javascriptSkill} />
         <Skill title='TypeScript' img={typescriptSkill} />
-        <Skill title='Redux' img={reduxSkill} />
         <Skill title='Node' img={nodeSkill} />
+        <Skill title='React' img={reactSkill} />
+        <Skill title='Redux' img={reduxSkill} />
         <Skill title='Firebase' img={firebaseSkill} />
         <Skill title='MongoDB' img={mongodbSkill} />
+        <Skill title='Git' img={gitSkill} />
         <Skill title='JSON' img={jsonSkill} />
       </div>
     </section>
   );
 }
 
-export default Skills;
+export default memo(Skills);
