@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url('../../assets/images/hero-pattern-bg-lg.png') center center;
+  background: url('../../assets/images/header-pattern.png') center center;
   background-size: cover;
   pointer-events: none;
 }
@@ -26,7 +26,7 @@
   position: absolute;
   top: 5px;
   left: 0;
-  background: url('../../assets/images/hero-guy-1-lg.png') center center;
+  background: url('../../assets/images/header-divider.png') center center;
   background-size: cover;
   pointer-events: none;
 }

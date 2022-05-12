@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './Title.css';
 
 function Title({ title }) {
@@ -7,4 +7,4 @@ function Title({ title }) {
   );
 }
 
-export default Title;
+export default memo(Title);

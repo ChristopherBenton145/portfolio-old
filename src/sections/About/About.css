@@ -1,20 +1,25 @@
 .about {
-  width: 300px;
+  width: 90vw;
+  max-width: 1000px;
   text-align: center;
   margin: auto;
-  padding-bottom: 100px;
+  padding-bottom: 250px;
+}
+
+.about .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 50px;
 }
 
 .about p {
   line-height: 28px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 @media (min-width: 800px) {
-  .about {
-    width: 500px;
-  }
-
   .about p {
     line-height: 32px;
     font-size: 25px;

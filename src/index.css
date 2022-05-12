@@ -45,12 +45,28 @@ a {
   text-decoration: none;
 }
 
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #F70A5D;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+
 /* Variables */
 
 :root {
   --light-gray: #d3d3d3;
   --gray: gray;
-  --red: #ef4b6c;
+  --red: #ef4b6c; /* Note - Using this now, but should be removed later */
   
   --default-fonts: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
