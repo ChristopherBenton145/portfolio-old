@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './Project.css';
 
-function Project({ title, live, code }) {
+function Project({ title, description, live, code }) {
   return (
     <div className='project'>
       <div className='image' />
       <h3>{title}</h3>
+      <p>{description}</p>
       <div className='buttons'>
-        <a href={live} target='_blank'><button>Live</button></a>
-        <a href={code} target='_blank'><button>Code</button></a>
+        <a href={live} target='_blank'><button className='live'>Live</button></a>
+        <a href={code} target='_blank'><button className='code'>Code</button></a>
       </div>
     </div>
   );
 }
 
-export default Project;
+export default memo(Project);

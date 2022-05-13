@@ -1,4 +1,6 @@
 .skill {
+  width: 75px;
+  height: 75px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -8,6 +10,7 @@
 
 .skill img {
   width: 50px;
+  background-size: cover;
 }
 
 @media (min-width: 800px) {

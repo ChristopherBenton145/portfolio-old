@@ -14,6 +14,8 @@ import mongodbSkill from '../../assets/images/skills/mongodb.png';
 import nodeSkill from '../../assets/images/skills/node.png';
 import reactSkill from '../../assets/images/skills/react.png';
 import reduxSkill from '../../assets/images/skills/redux.png';
+import figmaSkill from '../../assets/images/skills/figma.png';
+import sketchSkill from '../../assets/images/skills/sketch.png';
 
 function Skills() {
   return (
@@ -32,6 +34,8 @@ function Skills() {
         <Skill title='MongoDB' img={mongodbSkill} />
         <Skill title='Git' img={gitSkill} />
         <Skill title='JSON' img={jsonSkill} />
+        <Skill title='Figma' img={figmaSkill} />
+        <Skill title='Sketch' img={sketchSkill} />
       </div>
     </section>
   );

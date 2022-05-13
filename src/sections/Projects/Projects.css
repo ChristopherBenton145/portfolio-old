@@ -1,14 +1,15 @@
+.projects {
+  margin-bottom: 150px;
+}
+
 .projects .container {
   width: 90vw;
+  max-width: 1200px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 50px;
   margin: auto;
-  padding-bottom: 100px;
-}
-
-@media (min-width: 1400px) {
-  .projects .container {
-    width: 60vw;
-  }
+  margin-top: 40px;
 }

@@ -15,16 +15,16 @@ export function gotoSection(element, offset = 0) {
 
 function Nav() {
   useEffect(() => document.addEventListener('scroll', () => {
-    if (onScreen(document.querySelector('.contact'))) {
-      activateMenu(5);
-    } else if (onScreen(document.querySelector('.projects'))) {
-      activateMenu(4);
-    } else if (onScreen(document.querySelector('.skills'))) {
-      activateMenu(3);
-    } else if (onScreen(document.querySelector('.about'))) {
-      activateMenu(2);
-    } else if (onScreen(document.querySelector('.header'))) {
+    if (onScreen(document.querySelector('.header h2'))) {
       activateMenu(1);
+    } else if (onScreen(document.querySelector('.about h2'))) {
+      activateMenu(2);
+    } else if (onScreen(document.querySelector('.skills h2'))) {
+      activateMenu(3);
+    } else if (onScreen(document.querySelector('.projects h2'))) {
+      activateMenu(4);
+    } else if (onScreen(document.querySelector('.contact h2'))) {
+      activateMenu(5);
     }
   }), []);
 
