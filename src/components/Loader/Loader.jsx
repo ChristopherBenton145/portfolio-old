@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './Loader.css';
 
 function Loader({ color, duration, delay }) {
@@ -7,4 +7,4 @@ function Loader({ color, duration, delay }) {
   );
 }
 
-export default Loader;
+export default memo(Loader);

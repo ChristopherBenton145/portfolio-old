@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url('../../assets/images/footer-pattern-bg.png') center center;
+  background: url('../../assets/images/footer-pattern.png') center center;
   background-size: cover;
 }
 
@@ -25,6 +25,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url('../../assets/images/footer-white-mask.png') center;
+  background: url('../../assets/images/footer-divider.png') center;
   background-size: cover;
 }

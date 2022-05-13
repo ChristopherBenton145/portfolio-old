@@ -7,7 +7,6 @@
 }
 
 html {
-  /* Remove later */
   overflow-x: hidden;
 }
 
@@ -76,6 +75,5 @@ body::-webkit-scrollbar-thumb {
 @media (min-width: 800px) {
   html.static {
     overflow: visible !important;
-    /* overflow-y: visible !important; */
   }
 }
