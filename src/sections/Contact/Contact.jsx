@@ -33,6 +33,7 @@ function Contact() {
           </li>
         </a>
       </ul>
+      <h4>c.benton.145@gmail.com</h4>
     </section>
   );
 }
