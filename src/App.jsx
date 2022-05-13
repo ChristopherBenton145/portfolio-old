@@ -10,13 +10,13 @@ import Footer from './sections/Footer/Footer';
 function App() {
   return (
     <div className='app'>
-      <Loader color='#000' duration='2.5s' delay='1s' />
+      {/* <Loader color='#000' duration='2.5s' delay='1s' /> */}
       <Header />
       <About />
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
