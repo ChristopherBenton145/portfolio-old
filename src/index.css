@@ -14,10 +14,6 @@ html.static {
   overflow: hidden;
 }
 
-html.loading {
-  overflow: hidden !important;
-}
-
 body {
   margin: 0;
   font-family: var(--default-fonts);
@@ -68,12 +64,4 @@ body::-webkit-scrollbar-thumb {
   --gray: gray;
   
   --default-fonts: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-}
-
-/*  Media Queries */
-
-@media (min-width: 800px) {
-  html.static {
-    overflow: visible !important;
-  }
 }

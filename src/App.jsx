@@ -10,7 +10,7 @@ import Footer from './sections/Footer/Footer';
 function App() {
   return (
     <div className='app'>
-      <Loader color='#000' duration='2.5s' delay='1s' />
+      <Loader duration='3000' delay='1000' />
       <Header />
       <About />
       <Skills />
