@@ -22,7 +22,6 @@
   border: 5000px solid #000;
   border-radius: 50%;
   box-sizing: content-box;
-  margin: auto;
 }
 
 @keyframes load {
