@@ -17,16 +17,21 @@
 }
 
 .project:nth-child(2) .image {
-  background: url('../../assets/images/projects/premium-landing-page.png') center center;
+  background: url('../../assets/images/projects/2048.png') center center;
   background-size: cover;
 }
 
 .project:nth-child(3) .image {
-  background: url('../../assets/images/projects/restaurant-page.png') center center;
+  background: url('../../assets/images/projects/premium-landing-page.png') center center;
   background-size: cover;
 }
 
 .project:nth-child(4) .image {
+  background: url('../../assets/images/projects/restaurant-page.png') center center;
+  background-size: cover;
+}
+
+.project:nth-child(5) .image {
   background: url('../../assets/images/projects/multistep-form.png') center center;
   background-size: cover;
 }
